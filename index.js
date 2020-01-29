@@ -1,4 +1,4 @@
-"use-strict";
+'use-strict';
 const add = (a, b) => a + b;
 
-console.log(add(101, 1));
+module.exports = add;

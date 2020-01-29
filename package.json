@@ -9,10 +9,10 @@
   "private": false,
   "dependencies": {
     "jest": "^25.1.0",
-    "ts-node": "^8.6.2",
-    "typescript": "^3.7.5"
+    "ts-node": "^8.6.2"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "jest"
   }
 }
