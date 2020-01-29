@@ -26,8 +26,10 @@ const testCases = [
 ];
 
 ```
-Using this function `const dataMapper = (inputData) => inputData.map(Object.values);
-` we can write tests like this:
+Using this function:
+> `const dataMapper = (inputData) => inputData.map(Object.values)`
+
+ we can write tests like this:
 
 ```
 describe('passes all tests using MAPPED `it.each` syntax', () => {
