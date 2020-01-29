@@ -1,0 +1,18 @@
+{
+  "name": "jest-each-parametrized-tests",
+  "version": "0.0.1",
+  "description": "Testing jest .each implementation with array of objects matching",
+  "main": "index.ts",
+  "repository": "https://github.com/pawelkrystkiewicz/jest-each-parametrized-tests.git",
+  "author": "pawelkrystkiewicz <pawelkrystkiewicz@outlook.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "jest": "^25.1.0",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
