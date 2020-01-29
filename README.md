@@ -2,7 +2,7 @@
 
 ## Idea behind the example
 This piece of code means to evaluate approach to parametrized jest testing with mapping arrays of objects with parameters to jest's `it.each` syntax:
-```
+```javascript
  describe('test add method', () => {
    it.each`
      a     | b     | result
@@ -16,8 +16,8 @@ This piece of code means to evaluate approach to parametrized jest testing with 
 ```
 
 ### Solution
-Having tests decalred as array of objects:
-```
+Having tests declared as array of objects:
+```javascript
 const testCases = [
   { a: 1, b: 2, result: 3 },
   { a: 10, b: 20, result: 30 },
@@ -27,11 +27,16 @@ const testCases = [
 
 ```
 Using this function:
-> `const dataMapper = (inputData) => inputData.map(Object.values)`
+```javascript
+
+const dataMapper = (inputData) => inputData.map(Object.values)
+
+```
 
  we can write tests like this:
 
-```
+```javascript
+
 describe('passes all tests using MAPPED `it.each` syntax', () => {
     test.each(dataMapper(testCases))(`%i + %i = %i`, (a, b, expected) => {
       expect(add(a, b)).toBe(expected);
